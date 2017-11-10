@@ -227,8 +227,9 @@ a {
 }
 
 .article {
-    width: 50%;
+    width: 49%;
     display: inline-block;
+    padding: 10px;
 }
 
 .article img {
@@ -237,7 +238,7 @@ a {
 }
 
 .news {
-    
+    display: inline-block;
 }
 
 .middlebar {
@@ -265,7 +266,7 @@ a {
     display: inline-block;
     z-index: 2;
     position: relative;
-    left: 10px;
+    right: 10px;
     bottom: 10px;
 }
 
@@ -286,9 +287,10 @@ a {
     padding: 30px 0;
 }
 
+/*
 .article-footer {
-    max-height: 144px;
-}
+    
+}*/
 
 .circle {
     display: inline-block;
@@ -311,7 +313,6 @@ a {
 }
 
 .side-data {
-    list-style-type: none;
     height: 144px;
 }
 
@@ -325,6 +326,13 @@ a {
 
 .news {
     width: 33%;
+    display: inline-block;
+}
+
+.news h2 {
+    margin: 20px;
+    height: 60px;
+    font-size: 50px;
     display: inline-block;
 }
 
