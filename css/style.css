@@ -210,6 +210,61 @@ a {
     text-decoration: none;
 }
 
+.topics {
+    background-color: white;
+}
+
+.investmentprojects {
+    width: 66%;
+    display: inline-block;
+}
+
+.article {
+    width: 50%;
+    display: inline-block;
+}
+
+.article img {
+    max-width: 100%;
+}
+
+
+.middlebar {
+    background: #333c55;
+    border: 1px solid transparent;
+    position: relative;
+    bottom: 5px;
+    line-height: 2em;
+    padding: 0.25em auto;
+    color: #eee;
+}
+
+.middlebar img {
+    width: 54px;
+    display: inline-block;
+}
+
+.article-heading {
+    margin: 0;
+}
+
+.article-paragraph {
+    margin-top: 13.6px;
+    border: 0 15px 0 15px #ddd;
+}
+
+.svg {
+    width:200px;
+    height:200;
+    font-size: 24px;
+}
+
+
+.news {
+    width: 33%;
+    display: inline-block;
+}
+
 .razmak {
     height: 500px;
 }
