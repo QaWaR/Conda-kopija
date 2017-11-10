@@ -219,6 +219,13 @@ a {
     display: inline-block;
 }
 
+.investmentprojects h2 {
+    margin: 20px;
+    height: 60px;
+    font-size: 50px;
+    display: inline-block;
+}
+
 .article {
     width: 50%;
     display: inline-block;
@@ -226,39 +233,95 @@ a {
 
 .article img {
     max-width: 100%;
+    z-index: 0;
 }
 
+.news {
+    
+}
 
 .middlebar {
     background: #333c55;
     border: 1px solid transparent;
     position: relative;
     bottom: 5px;
-    line-height: 2em;
-    padding: 0.25em auto;
     color: #eee;
+    z-index: 1;
+    height: 40px;
+    vertical-align: middle;
+}
+
+.middlebar-text {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin: 10px;
 }
 
 .middlebar img {
     width: 54px;
+    height: 54px;
+    float: right;
     display: inline-block;
+    z-index: 2;
+    position: relative;
+    left: 10px;
+    bottom: 10px;
 }
 
 .article-heading {
     margin: 0;
 }
 
+.location {
+    font-weight: 400;
+}
+
+.location img {
+    width: 14px;
+}
+
 .article-paragraph {
-    margin-top: 13.6px;
     border: 0 15px 0 15px #ddd;
+    padding: 30px 0;
 }
 
-.svg {
-    width:200px;
-    height:200;
-    font-size: 24px;
+.article-footer {
+    max-height: 144px;
 }
 
+.circle {
+    display: inline-block;
+    border: 5px solid #00c98a;
+    border-radius: 50%;
+    text-align: center;
+    width: 144px;
+    height:144px;
+}
+
+.circle-contents {
+    text-align: center;
+    margin: 45px 0;
+}
+
+.data {
+    display: inline-block;
+    height: 144px;
+
+}
+
+.side-data {
+    list-style-type: none;
+    height: 144px;
+}
+
+.black {
+    color: #333c55;
+}
+
+.grey {
+    color: #808ca1;
+}
 
 .news {
     width: 33%;
