@@ -19,7 +19,7 @@ header {
     text-transform: uppercase;
 
 }
-/*
+
 .main-nav {
     list-style-type: none;
     float: right;
@@ -28,10 +28,18 @@ header {
     align-items: flex-end;
 }
 
+.main-nav {
+    padding: 0;
+}
+
 .main-nav li {
     display: inline-block;
     padding: 10px;
     color: #000;
+}
+
+.main nav li:hover {
+    color: #fff;
 }
 
 .main-nav li a {
@@ -42,50 +50,11 @@ header {
     color: #fff;
     background-color: #333c55;
 }
-*/
 
-
-.main-nav {
-    list-style-type: none;
-    float: right;
+.main-nav li a:hover {
+    color: #fff;
+    background-color: #333c55;
 }
-
-.main-nav li {
-    display: inline-block;
-    padding: 0 10px;
-}
-
-.main-nav ul {
-    margin: 0!important;
-}
-
-.main-nav li:hover {
-    background-color: red;
-}
-
-.nav-button {
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 .logo {
@@ -104,12 +73,12 @@ header {
     width: 1200px;
     margin: 0 auto;
 }
-/*
+
 .nav-container {
     width: 1200px;
     height: 44px;
     margin: 0 auto;
-}*/
+}
 
 .bold {
     font-weight: 400;
@@ -326,6 +295,7 @@ a {
 
 .location {
     font-weight: 400;
+    padding: 10px 0;
 }
 
 .location img {
@@ -334,13 +304,12 @@ a {
 
 .article-paragraph {
     border: 0 15px 0 15px #ddd;
-    padding: 30px 0;
 }
 
-/*
+
 .article-footer {
-    
-}*/
+    padding: 20px;
+}
 
 .circle {
     display: inline-block;
@@ -391,6 +360,15 @@ a {
     padding-top: 10px;
 }*/
 
+.news-location {
+    padding: 20px 0;
+}
+
+.location-text {
+    font-size: 80%;
+    padding: 5px;
+}
+
 .news-location img {
     vertical-align: middle;
     width: 34px;
@@ -413,7 +391,8 @@ a {
 
 .news-article {
     display: inline-block;
-    border: 15px solid transparent;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
 }
 
 .news-article img {
