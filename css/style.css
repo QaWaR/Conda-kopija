@@ -19,7 +19,7 @@ header {
     text-transform: uppercase;
 
 }
-
+/*
 .main-nav {
     list-style-type: none;
     float: right;
@@ -42,6 +42,50 @@ header {
     color: #fff;
     background-color: #333c55;
 }
+*/
+
+
+.main-nav {
+    list-style-type: none;
+    float: right;
+}
+
+.main-nav li {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.main-nav ul {
+    margin: 0!important;
+}
+
+.main-nav li:hover {
+    background-color: red;
+}
+
+.nav-button {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .logo {
@@ -60,12 +104,12 @@ header {
     width: 1200px;
     margin: 0 auto;
 }
-
+/*
 .nav-container {
     width: 1200px;
     height: 44px;
     margin: 0 auto;
-}
+}*/
 
 .bold {
     font-weight: 400;
@@ -230,6 +274,7 @@ a {
     width: 49%;
     display: inline-block;
     padding: 10px;
+    vertical-align: top;
 }
 
 .article img {
@@ -238,7 +283,9 @@ a {
 }
 
 .news {
+    width: 33%;
     display: inline-block;
+    vertical-align: top;
 }
 
 .middlebar {
@@ -260,18 +307,21 @@ a {
 }
 
 .middlebar img {
-    width: 54px;
-    height: 54px;
+    width: 59px;
+    height: 59px;
     float: right;
     display: inline-block;
     z-index: 2;
     position: relative;
     right: 10px;
     bottom: 10px;
+    border: 5px solid white;
+    border-radius: 15%;
 }
 
 .article-heading {
     margin: 0;
+    padding-top: 10px;
 }
 
 .location {
@@ -299,6 +349,7 @@ a {
     text-align: center;
     width: 144px;
     height:144px;
+    vertical-align: middle;
 }
 
 .circle-contents {
@@ -309,7 +360,7 @@ a {
 .data {
     display: inline-block;
     height: 144px;
-
+    vertical-align: middle;
 }
 
 .side-data {
@@ -324,16 +375,50 @@ a {
     color: #808ca1;
 }
 
-.news {
-    width: 33%;
-    display: inline-block;
+.green {
+    background-color: #00c98a;
+}
+
+
+
+
+
+
+
+
+/*
+.news-article-heading {
+    padding-top: 10px;
+}*/
+
+.news-location img {
+    vertical-align: middle;
+    width: 34px;
+    padding-right: 15px;
 }
 
 .news h2 {
     margin: 20px;
     height: 60px;
     font-size: 50px;
+}
+
+.news a {
+    color: #00c98a;
+}
+
+.new a:hover {
+    text-decoration: underline;
+}
+
+.news-article {
     display: inline-block;
+    border: 15px solid transparent;
+}
+
+.news-article img {
+    display: inline-block;
+    max-width: 100%;
 }
 
 .razmak {
