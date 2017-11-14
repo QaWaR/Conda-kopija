@@ -26,51 +26,54 @@ header {
     text-align: left;
     display: flex;
     align-items: flex-end;
-}
-
-.main-nav {
     padding: 0;
+    margin: 0;
+    font-size: 0.8em;
 }
 
 .main-nav li {
     display: inline-block;
-    padding: 15px;
-    color: #000;
-}
-
-.main nav li:hover {
-    color: #fff;
+    color: #333c55;
 }
 
 .main-nav li a {
     text-decoration: none;
+    padding: 30px 20px;
+    display: inline-block;
+    height: 96px;
 }
 
 .main-nav li:hover {
-    color: white;
     background-color: #333c55;
+    transition: background-color 0.3s linear;
 }
 
-.main-nav li a:hover {
+.main-nav li:hover a {
     color: #fff;
-    background-color: #333c55;
+    transition: color 0.3s linear;
 }
 
+.nmg {
+    position: relative;
+    top: 8px;
+}
 
 .logo {
     display: inline-block;
     position: absolute;
     top: 21px;
+    font-size: 0.8em;
 }
 
 #logo-distance {
     padding: 0 15px;
     position: relative;
     bottom: 15px;
+    color: #333c55;
 }
 
 .container {
-    width: 1200px;
+    width: 1000px;
     margin: 0 auto;
 }
 
@@ -81,18 +84,27 @@ header {
 }
 
 .bold {
-    font-weight: 400;
+    font-weight: 700;
 }
 
 .small {
     font-size: 75%;
 }
 
-.regions {
-    list-style-type: none;
-    position: relative;
-    top: 13px;
+.center {
+    vertical-align: middle;
 }
+
+.bottom-header {
+    background-color: #f2f0f2;
+    margin-bottom: -21px;
+    padding: 15px 0;
+}
+
+.bottom-header select {
+    background-color: #f2f0f2;
+}
+
 .language {
     list-style-type: none;
     float: right;
@@ -112,6 +124,7 @@ header {
 .button:hover {
     background-color: #ffffff;
     color: #e04840;
+    transition: 0.3s linear;
 }
 
 .cover {
@@ -129,9 +142,6 @@ header {
 
 .select {
     float: right;
-    margin: auto 0;
-    position: relative;
-    top: 13px;
 }
 
 .cover-content {
@@ -146,38 +156,6 @@ header {
     display: inline-block;
     font-weight: 700;
 }
-/*
-.menu {
-    position: relative;
-    text-align: center;
-    top: 5px;
-}
-
-.nes {
-    border: 1px solid #bada55;
-    background-color: #bada55;
-    border-radius: 50%;
-    display: inline-block;
-    height: 80px;
-    padding: 15px 30px;
-    text-align: center;
-    width: 80px;
-    margin: 10px;
-    caption-side: bottom;
-}
-
-.nes img {
-    position: relative;
-    top:10px;
-    right: 25px;
-}
-
-.menu-caps {
-    position: relative;
-    top: 5px;
-}
-
-*/
 
 .ceo-menu {
     display: block;
@@ -194,6 +172,7 @@ header {
 
 .menu-item:hover {
     opacity: 0.8;
+    transition: 0.3s linear;
 }
 
 .ikona {
@@ -210,7 +189,6 @@ header {
     width: 50px;
     position: relative;
     top: 20px;
-    /*padding: 23px;*/
 }
 
 .opis {
@@ -245,7 +223,11 @@ a {
     display: inline-block;
     padding: 10px;
     vertical-align: top;
+}
+
+.bg-border {
     background-color: #f9f9f9;
+    border: 1px solid red;
 }
 
 .article img {
@@ -290,6 +272,19 @@ a {
     border-radius: 15%;
 }
 
+.article-header {
+    position: relative;
+}
+
+.sme {
+    background-color: #00c98a;
+    position: absolute;
+    top: -25px;
+    right: 40px;
+    color: #fff;
+    padding: 8px;
+}
+
 .article-heading {
     margin: 0;
     padding: 10px;
@@ -297,7 +292,7 @@ a {
 
 .location {
     font-weight: 400;
-    padding: 15px 0;
+    padding: 15px;
 }
 
 .location img {
@@ -305,12 +300,12 @@ a {
 }
 
 .article-paragraph {
-    border: 0 15px 0 15px #ddd;
+    padding: 15px;
 }
 
 
 .article-footer {
-    padding: 20px;
+    padding: 15px;
 }
 
 .circle {
@@ -321,6 +316,7 @@ a {
     width: 144px;
     height:144px;
     vertical-align: middle;
+    margin-right: 15px;
 }
 
 .circle-contents {
@@ -330,12 +326,18 @@ a {
 
 .data {
     display: inline-block;
-    height: 144px;
     vertical-align: middle;
 }
 
-.side-data {
-    height: 144px;
+.financed-footer {
+    background-color: #f2f0f2;
+    border: 1px solid transparent;
+    padding: 15px 0;
+}
+
+.financed-data {
+    display: inline-block;
+    padding: 0 15px;
 }
 
 .black {
@@ -349,18 +351,6 @@ a {
 .green {
     background-color: #00c98a;
 }
-
-
-
-
-
-
-
-
-/*
-.news-article-heading {
-    padding-top: 10px;
-}*/
 
 .news-location {
     padding: 15px 0;
@@ -396,7 +386,6 @@ a {
     display: inline-block;
     padding: 10px;
     border: 1px solid #e0e0e0;
-    background-color: #f9f9f9;
 }
 
 .news-article img {
@@ -407,25 +396,6 @@ a {
 .razmak {
     height: 200px;
 }
-
-/*
-.articles {
-    display: inline-block;
-    width: 1200px;
-}
-
-.investment-projects {
-    width: 66%;
-}
-
-.coolgiants {
-    max-width: 220px;
-}
-
-.news {
-    width: 33%
-}
-*/
 
 .social {
     background-color: #f2f0f2;
@@ -464,7 +434,7 @@ a {
 .link-icons:hover {
     border-color: #00c98a;
     background-color: #00c98a;
-    transition: 400ms ease;
+    transition: 0.3s linear;
 }
 
 .link-icon-img {
@@ -481,28 +451,27 @@ a {
 
 .footer1-item {
     display: inline-block;
-    text-align: center;
     margin: auto;
-    width: 25%;
+    width: 24%;
     padding: 10px 0;
-    height: 25%;
     vertical-align: middle;
 }
 
 .footer1-item img {
     max-width: 100%;
+    width: 150px;
 }
 
 .footer1-a {
     display: inline-block;
-    color: #fff;
+    color: #f2f0f2;
     text-decoration: underline;
     text-decoration-color: white;
 }
 
 .footer1-paragraph {
     display: inline-block;
-    color: #fff;
+    color: #f2f0f2;
     text-decoration: none;
 }
 
